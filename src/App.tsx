@@ -1,7 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
+import Accordion from "react-bootstrap/Accordion";
 import "./App.css";
 
 function App() {
@@ -9,7 +7,32 @@ function App() {
 
   return (
     <>
-      <h1>What is thy bidding my master?</h1>
+      <Accordion defaultActiveKey="0">
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>#1 Clark Kent and Lois Lane</Accordion.Header>
+          <Accordion.Body></Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>#2 Bruce Wayne and Selina Kyle</Accordion.Header>
+          <Accordion.Body></Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="2">
+          <Accordion.Header>#3 Oliver McQeen and Dina Lance</Accordion.Header>
+          <Accordion.Body></Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="3">
+          <Accordion.Header>#4 Hal Jordan and Carol Ferris</Accordion.Header>
+          <Accordion.Body></Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="4">
+          <Accordion.Header>#5 John Jones and Diana Prince</Accordion.Header>
+          <Accordion.Body></Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="5">
+          <Accordion.Header>#6 Arthur Curry and Mera Currey</Accordion.Header>
+          <Accordion.Body></Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
     </>
   );
 }
