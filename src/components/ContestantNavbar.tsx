@@ -1,3 +1,4 @@
+import { Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -5,19 +6,23 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function ContestantNavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" variant="">
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="#home">Adv Country Swing</Navbar.Brand>
-
+        <Navbar.Brand href="#home">Nov Country Swing</Navbar.Brand>
+        <Button variant="outline-light">Submit</Button>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" style={{ margin: "10px auto" }}>
           <Nav className="me-auto">
-            <Nav.Link href="#home">
-              <button>Logout</button>
-            </Nav.Link>
+            <Button
+              variant="outline-light"
+              style={{ width: "100px", alignSelf: "center" }}
+            >
+              Logout
+            </Button>
+
             <Nav.Link href="#link">Link</Nav.Link>
           </Nav>
-          <NavDropdown title="Order by" id="nav-dropdown">
+          <NavDropdown title="Order by" id="nav-dropdown" menuVariant="light">
             <NavDropdown.Item eventKey="4.1">Bib #</NavDropdown.Item>
             <NavDropdown.Item eventKey="4.2">Raw Score</NavDropdown.Item>
             <NavDropdown.Item eventKey="4.3">
