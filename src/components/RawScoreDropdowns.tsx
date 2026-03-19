@@ -9,26 +9,28 @@ function RawScoreDropdowns() {
   };
 
   return (
-    <Dropdown onSelect={handleSelect}>
-      <Dropdown.Toggle
-        variant="success"
-        id="dropdown-basic"
-        title={selectedItem}
-      >
-        {selectedItem}
-      </Dropdown.Toggle>
-      <Dropdown.Menu>
-        {Array.from({ length: 10 }).map((_, i) => (
-          <Dropdown.Item
-            eventKey={String(i)}
-            key={i}
-            active={selectedItem === String(i)}
-          >
-            {i}
-          </Dropdown.Item>
-        ))}
-      </Dropdown.Menu>
-    </Dropdown>
+    <>
+      <Dropdown onSelect={handleSelect}>
+        <Dropdown.Toggle
+          variant="success"
+          id="dropdown-basic"
+          title={selectedItem}
+        >
+          {selectedItem}
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+          {Array.from({ length: 10 }).map((_, i) => (
+            <Dropdown.Item
+              eventKey={String(i)}
+              key={i}
+              active={selectedItem === String(i)}
+            >
+              {i}
+            </Dropdown.Item>
+          ))}
+        </Dropdown.Menu>
+      </Dropdown>
+    </>
   );
 }
 
