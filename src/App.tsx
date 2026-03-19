@@ -3,6 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 import "./App.css";
 import RawScoreTripleDigit from "./components/RawScoreTripleDigit";
 import RawScoreDigit from "./components/RawScoreDigit";
+import { ArrowRight, Pencil } from "react-bootstrap-icons";
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -11,7 +12,9 @@ function App() {
     <>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
-          <Accordion.Header>#1 Clark Kent and Lois Lane</Accordion.Header>
+          <Accordion.Header>
+            #1 Clark Kent and Lois Lane <Pencil />
+          </Accordion.Header>
           <Accordion.Body>
             <RawScoreTripleDigit />
             <div style={{ display: "flex", gap: "10px", visibility: "hidden" }}>

@@ -12,7 +12,7 @@ function RawScoreDigit() {
     <>
       <Dropdown onSelect={handleSelect}>
         <Dropdown.Toggle
-          variant="success"
+          variant="primary"
           id="dropdown-basic"
           title={selectedItem}
         >
