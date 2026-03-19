@@ -1,7 +1,7 @@
 import Accordion from "react-bootstrap/Accordion";
 import RawScoreTripleDigit from "./RawScoreTripleDigit";
 import RawScoreDigit from "./RawScoreDigit";
-import { ArrowRight, Pencil } from "react-bootstrap-icons";
+//import { ArrowRight, Pencil } from "react-bootstrap-icons";
 
 function ContestantList() {
   //const [count, setCount] = useState(0);
