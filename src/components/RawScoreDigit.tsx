@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 
 function RawScoreDigit() {
-  const [selectedItem, setSelectedItem] = React.useState<string>("0");
+  const [selectedItem, setSelectedItem] = useState<string>("0");
 
   const handleSelect = (eventKey: string | null) => {
     if (eventKey) setSelectedItem(eventKey);
