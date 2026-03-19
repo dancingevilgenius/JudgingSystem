@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 
-function RawScoreDropdowns() {
+function RawScoreDigit() {
   const [selectedItem, setSelectedItem] = useState<string>("0");
 
   const handleSelect = (eventKey: string | null) => {
@@ -34,4 +34,4 @@ function RawScoreDropdowns() {
   );
 }
 
-export default RawScoreDropdowns;
+export default RawScoreDigit;
